@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function ItemFormHandler({submit, btnText, title, Description, _id}){
-    const initialInputs = {title: title || '', Description: Description || ''};
+export default function ItemFormHandler({submit, btnText, title, Description, _id, date}){
+    const initialInputs = {title: title || '', Description: Description || '', date: date || ''};
     const [inputs, setInputs] = useState(initialInputs);
 
     const handleChange = (e) => {
@@ -29,6 +29,13 @@ export default function ItemFormHandler({submit, btnText, title, Description, _i
             value={inputs.Description}
             onChange={handleChange}
             placeholder='Description'
+            />
+             <input 
+            type='text'
+            name='date'
+            value={inputs.date}
+            onChange={handleChange}
+            placeholder='date'
             />
             <button>{btnText}</button>
 

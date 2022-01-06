@@ -40,7 +40,7 @@ function App(){
 
   useEffect(() =>{
     getData()
-  }, []);
+  });
 
   const recycleItemsList = intakeItem.map(item =>
      <Items {...item} 
@@ -51,6 +51,7 @@ function App(){
     
     <div id='itemsDiv'>
       <ItemFormHandler
+      getData={getData}
       btnText='Add Item' 
       submit={addData}/>
       {recycleItemsList}

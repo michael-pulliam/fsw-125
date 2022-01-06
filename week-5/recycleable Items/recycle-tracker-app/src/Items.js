@@ -19,6 +19,7 @@ export default function Items({ deleteData, btnText, editData, title, Descriptio
             <ItemFormHandler
             title={title}
             Description={Description}
+            date={date}
             _id={_id}
             btnText='Update'
             submit={editData}
