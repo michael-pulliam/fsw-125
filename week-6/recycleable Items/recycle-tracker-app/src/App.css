@@ -1,0 +1,15 @@
+h1, h2, h3 {
+    margin: 5px;
+}
+
+#itemsDiv{
+    display: flex;  
+    flex-direction: column;
+    margin: 32px 32px 32px 32px;
+}
+
+#items{
+    border: 1px solid#333;
+    padding: 10px;
+    margin: 5px;
+}
